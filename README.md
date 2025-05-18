@@ -6,7 +6,7 @@ This model classifies images into 90 different animal species using a fine-tuned
 ## Artefakte
 | Name | URL |
 |-|-|
-| Huggingface | [Huggingface Space](https://huggingface.co/) |
+| Huggingface | [Huggingface Space](https://huggingface.co/spaces/maceythm/vit-90-animals) |
 | Model Page | [Huggingface Model Page](https://huggingface.co/maceythm/vit-90-animals) |
 | Code | [GitHub](https://github.com/maceythm/vit-90-animals) |
 
@@ -63,10 +63,21 @@ Details of training can be found on [Huggingface TensorBoard](https://huggingfac
 | Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | runs/May17_10-24-11_cs-01jvew10vftebgspfnespgcr4r |
 | Transfer Learning with `google/vit-base-patch16-224` (with data augmentation) | runs/May17_14-37-53_cs-01jvf84h4q9vae662f2w6rkkkt |
 
-
+![Model Accuracy](./doc/accuracy.png)
 
 Too much or the wrong data augmentation methods can lead to bad model performance, as shown in the following run:
 | Model/Method | TensorBoard Link |
 |-|-|
 | Transfer Learning with `google/vit-base-patch16-224` (with data augmentation) | runs/May17_13-54-12_cs-01jvf84h4q9vae662f2w6rkkkt |
+
+## Results
+| Model/Method | Accuracy | Precision | Recall |
+|-|-|-|-|
+| Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | 98.3% | - | - |
+| Transfer Learning with `google/vit-base-patch16-224` (with data augmentation) | 97.9% | - | - |
+| Zero-shot Image Classification with `openai/clip-vit-large-patch14` | 96.3% | 97.1% | 96.3% |
+
+## References
+![Label Distribution](./doc/label_distribution.png)
+![Label Distribution](./doc/sample_prediction_transferlearning.png)
 
