@@ -63,12 +63,16 @@ Details of training can be found on [Huggingface TensorBoard](https://huggingfac
 | Transfer Learning with `google/vit-base-patch16-224` (without data augmentation) | runs/May17_10-24-11_cs-01jvew10vftebgspfnespgcr4r |
 | Transfer Learning with `google/vit-base-patch16-224` (with data augmentation) | runs/May17_14-37-53_cs-01jvf84h4q9vae662f2w6rkkkt |
 
-![Model Accuracy](./doc/accuracy.png)
+![Model Accuracy](./doc/accuracy_1and3.png)
 
 Too much or the wrong data augmentation methods can lead to bad model performance, as shown in the following run:
 | Model/Method | TensorBoard Link |
 |-|-|
 | Transfer Learning with `google/vit-base-patch16-224` (with data augmentation) | runs/May17_13-54-12_cs-01jvf84h4q9vae662f2w6rkkkt |
+
+![Model Accuracy](./doc/accuracy_2.png)
+
+I will not go into that run any further in this documentation.
 
 ## Results
 | Model/Method | Accuracy | Precision | Recall |
@@ -80,4 +84,3 @@ Too much or the wrong data augmentation methods can lead to bad model performanc
 ## References
 ![Label Distribution](./doc/label_distribution.png)
 ![Label Distribution](./doc/sample_prediction_transferlearning.png)
-
